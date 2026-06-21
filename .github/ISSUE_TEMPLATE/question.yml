@@ -1,0 +1,26 @@
+name: "💬 Question"
+description: "Ask a question or request general troubleshooting help."
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for general questions, troubleshooting help, or clarification.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "What do you want to know or understand?"
+      placeholder: "Describe your question clearly..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Provide any relevant background, steps you've tried, or related details."
+      placeholder: "I've tried..., I expected..., but..."
+    validations:
+      required: false
