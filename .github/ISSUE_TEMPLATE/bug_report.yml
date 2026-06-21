@@ -1,0 +1,54 @@
+name: "🐞 Bug Report"
+description: "Report a reproducible problem with one of our products."
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out all required fields to help us investigate efficiently.
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Product name, version, OS, browser, or any relevant environment details."
+      placeholder: "Example: Product X v1.4.2 on Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "List the exact steps needed to reproduce the issue."
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs / Screenshots"
+      description: "Attach logs or screenshots if available. Remove sensitive information."
+      placeholder: "Drag and drop files here"
+    validations:
+      required: false
