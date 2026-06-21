@@ -1,0 +1,35 @@
+name: "💡 Feature Request"
+description: "Suggest a new feature or improvement."
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea that would improve our products? Tell us about it.
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: "Use Case"
+      description: "Describe the problem or scenario this feature would address."
+      placeholder: "When I try to..., I want to..., so that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact"
+      description: "How would this feature help you or others?"
+      placeholder: "This would help because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Additional Details"
+      description: "Any extra context, examples, or mockups."
+      placeholder: "Optional"
+    validations:
+      required: false
